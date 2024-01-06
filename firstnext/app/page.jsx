@@ -1,5 +1,14 @@
 
-export default function HomePage() {
-return <h1>Hello World</h1>
+import Users from "@/components/Users"
 
+export const metadata = {
+    title: "Home page"
+}
+
+export default function HomePage() {
+//server component
+return  <section>
+    {/*client componente  */}
+<Users/>
+</section>
 }
