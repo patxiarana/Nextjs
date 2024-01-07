@@ -1,12 +1,12 @@
 import React from 'react'
 import PostCard from '@/components/PostCard'
-
+import './Post.css'
 
 async function loadPost() {
     const res = await fetch("https://jsonplaceholder.typicode.com/posts")
     const data = await res.json()
 
-    new Promise((resolve) => setTimeout(resolve,5000))
+    //new Promise((resolve) => setTimeout(resolve,5000))
 
     return data
 }
@@ -17,7 +17,7 @@ export default async function PostPages() {
     const posts = await loadPost()
  
     return (
-        <div>
+        <div className='grid'>
             {
                 posts.map(post => (
                     (
