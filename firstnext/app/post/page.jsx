@@ -4,7 +4,7 @@ async function loadPost() {
     const res = await fetch("https://jsonplaceholder.typicode.com/posts")
     const data = await res.json()
 
-    new Promise((resolve) => setTimeout(resolve,4000))
+   // new Promise((resolve) => setTimeout(resolve,4000))
 
     return data
 }
