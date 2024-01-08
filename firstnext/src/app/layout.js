@@ -1,6 +1,7 @@
-import NavBar from "@/components/NavBar";
+
 import {Roboto} from 'next/font/google'
 import "./globals.css"
+import NavBar from '@/components/NavBar';
 export const metadata = {
   title: "Mi tienda con Nextjs - HomePage",
   description: "esta es la pagina principal de mi tienda",
