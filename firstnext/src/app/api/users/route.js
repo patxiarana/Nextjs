@@ -6,7 +6,8 @@ export function GET() {
     //Extract Params
     //Query database
     //Comunicate with other services
-
+   console.log(process.env.TOKEN)
+   console.log(process.env.SECRET_KEY)
     return NextResponse.json({
         message:"Obteniendo datos"
     })
